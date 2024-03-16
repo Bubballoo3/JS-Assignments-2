@@ -2,9 +2,9 @@ var boardpieces=document.querySelectorAll("button.boardpiece");
 const possiblelines=[["b1","b2","b3"],["b4","b5","b6"],["b7","b8","b9"],
                     ["b1","b4","b7"],["b2","b5","b8"],["b3","b6","b9"],
                     ["b1","b5","b9"],["b3","b5","b7"]]
-var xmove=false;
+var xmove=true;
 console.log(boardpieces);
-var players=2;
+var players=1;
 
 for (var piece of boardpieces) {
     piece.addEventListener("click", function (e) {
@@ -13,11 +13,9 @@ for (var piece of boardpieces) {
         console.log("working")
         if (xmove) {
             e.target.parentElement.innerHTML="<img class=\"boardpiece\" src=\"xIcon.png\">"
-            if (players == 2) {
-                xmove=false
-            }
+            xmove=false
         }
-        else if (players==2){
+        else if (players == 2){
             e.target.parentElement.innerHTML="<img class=\"boardpiece\" src=\"oIcon.png\">"
             xmove=true
         }
@@ -25,5 +23,5 @@ for (var piece of boardpieces) {
 }
 
 function checkWin(madeMoves){
-    
+
 }
