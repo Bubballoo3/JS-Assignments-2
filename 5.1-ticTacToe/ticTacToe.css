@@ -3,12 +3,21 @@
 }
 
 body {
-    background-color: cornflowerblue;
+    background-color: rgb(132, 98, 13);
+    margin-left: .35in;
+    margin-right: .35in;
+}
+
+h1.display-3 {
+    text-align: center;
+    font-size: 10vw;
+    font-weight: 400;
 }
 
 table {
     height:60vw;
     max-width:15cm;
+    max-height: 15cm;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10vw;
@@ -22,22 +31,60 @@ table {
 }
 
 .col.one {
-    border-right: 2px solid #000;
+    border-right: 3px solid #000;
 }
 .col.three {
-    border-left: 2px solid #000;
+    border-left: 3px solid #000;
 }
 
 .row.one {
-    border-bottom: 2px solid #000;
+    border-bottom: 3px solid #000;
 }
 .row.three {
-    border-top: 2px solid #000;
+    border-top: 3px solid #000;
 }
 
 .boardpiece {
     width: 100%;
     height:100%;
-    background-color: rgb(65, 124, 233);
+    background-color: rgb(101, 75, 11);
+    border-style: none;
+}
+.winpiece {
+    width: 100%;
+    height:100%;
+    background-color:rgb(12, 148, 12);
+    border-style: none;
 }
 
+#result {
+    height:.5in;
+    vertical-align: middle;
+}
+.form-check-input {
+    scale: 140%;
+    margin-top: 9px;
+    color: blue;
+}
+
+.form-check {
+    width:60vw;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+}
+
+.rightside{
+    width: 100%;
+    margin-left: 40px;
+
+}
+
+#result {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.playagain {
+    background-color: rgb(190, 152, 55);;
+}
