@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(28, 28, 28);
+    color:blanchedalmond;
+}
+
+h1 {
+    margin-left: .5in;
+}
+div.gameboard {
+    margin:5%;
+    height: auto;
+    text-align: center;
+}
+
+div.tophalf {
+    height:20vw;
+    max-height: 2in;
+}
+div.bottomhalf {
+    height:20vw;
+    max-height: 2in;
+}
+
+.moveicon {
+    height:100%;
+    width:auto;
+}
+#record {
+    text-align: center;
+
+}
+div.circle {
+    position: absolute;
+    width: 20%;
+    aspect-ratio: 1;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 40%;
+    margin-right: 40%;
+    min-height: 1in;
+    min-width: 1in;
+}
+
+#paper {
+    background: red;
+    white-space: nowrap;
+}
+  
+#scissors {
+    background: green;
+    clip-path: polygon(-180% 180%, 50% 50%, 265% 180%, -80% 180%);
+}
+  
+#rock {
+    background: blue;
+    clip-path: polygon(-80% 0%, 50% 0%, 50% 50%, -175% 180%);
+    text-align: end;
+}
+
+img {
+    height: 70%;
+    width: auto;
+    max-height: 2in;
+    padding: 1%;
+    margin-right:1%;
+    vertical-align: middle;
+    border-radius: .3cm;
+}
+
+.top.left {
+    margin-left: -5vw;
+}
+.midspace {
+    margin:50%;
+}
+#altS {
+    margin-top: 70%;
+    color:black;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.bottomrow {
+    padding-top:21%;
+    vertical-align: baseline;
+    text-align: center;
+}
