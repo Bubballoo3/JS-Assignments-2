@@ -29,7 +29,14 @@ for (var piece of boardpieces) {
             if (result[0] == true) {
                 endGame(result[1],result[2])
             }
+            else if (madeMoves.keys().toArray().length == 9) {
+                endGame("None","None")
+            }
             else if (players==1) {
+                if (madeMoves.keys().toArray().length == 9) {
+                    endGame("None","None")
+                }
+                else{
                 computerMove(madeMoves)
                 result=checkWin(madeMoves)
                 if (result[0]==true) {
@@ -37,15 +44,16 @@ for (var piece of boardpieces) {
                 }
                 xmove=true
             }
+            }
         }
         else if (players == 2){
             e.target.parentElement.innerHTML="<img class=\"boardpiece\" src=\"oIcon.png\">"
             madeMoves.set(position,2)
-            var result=checkWin(madeMoves)
+            var result=checkWin(madeMoves)      
             if (result[0] == true) {
                 endGame(result[1],result[2])
             }
-            else {
+            else {  
                 xmove=true
             }
         }
@@ -107,6 +115,9 @@ function endGame(winner, winCode) {
     }
     else if ((players == 2) && (winner == "O")) {
         message="O's had it all game long. Nice job!"
+    }
+    else {
+        message="Looks like a tie"
     }
     result.innerHTML=message+"   <button type=\"button\" class=\"playagain\" onclick=\"reset()\"> Reset </button>"
     for (var position of winCode) {
